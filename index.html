@@ -3,11 +3,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
     <title>Contact</title>
 </head>
-<body>
+<body class="min-vh-100 d-flex align-items-center justify-content-center">
     
-    
+    <section class="main-container d-flex flex-column">
+        <div class="d-flex">
+            <input type="text" name="add-contact-input" class="input-group-text flex-grow-1" id="add-contact-input">
+            <button type="button" class="btn btn-success flex-grow-0 ms-2" id="btn-add">افزودن</button>
+        </div>
+
+        <div class="mt-4 d-flex flex-column bg-light p-2 bg-white" id="contacts-wrapper">
+            <div class="d-flex justify-content-between bg-light my-2 align-items-center w-100 px-2 py-1 rounded-1">
+                <p class="mb-0">مخاطب تست</p>
+                <div>
+                    <button type="button" class="btn btn-warning flex-grow-0 ms-2" id="btn-edit">ویرایش</button>
+                    <button type="button" class="btn btn-danger flex-grow-0 ms-2" id="btn-delete">حذف</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js" />
 
 </body>
 </html>
